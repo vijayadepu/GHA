@@ -1,0 +1,15 @@
+name: Second_Workflow
+on:
+    push:
+        branches: 
+            - main
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+        -   name: first step
+            run: echo "This is my first workflow"
+        -   name: print goodbye
+            run: |
+                echo "this is my first workflow ends here"
+                echo "goodbye"
